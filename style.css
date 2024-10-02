@@ -6,11 +6,17 @@
 }
 
 body {
+    background-image: url("https://media.tenor.com/yo2e1Y_uyf0AAAAM/blue-background-background.gif");
     margin:0 auto;
     height: 100vh;
-    background: linear-gradient(270deg, #ff0000, #1808a5);
-    background-size: 400% 400%;
-    animation: gradient 7s ease infinite;
+    width: 100%;
+    background-color: #000000;
+    background-color: rgba(10,23,55,0.5);
+}
+
+.alho h3 {
+    color: rgb(252, 242, 225);
+    text-align: center;
 }
 
 .logo img{
@@ -31,23 +37,78 @@ body {
 }
 
 .github img {
-    max-width: 50px;
-    width: 50px;
+    max-width: 60px;
+    width: 60px;
+}
+
+.github {
+    padding-top: 10px;
+}
+
+.github img:hover {
+    transform: scale(1.2);
+}
+ 
+.home {
+    display: flex;
+
+}
+
+.alho {
+    padding-top: 150px;
+}
+
+.alho img{
+    width: 250px;
+}
+
+.home h2 {
+    color: white;
+    padding: 200px;
+}
+
+.apresent {
+    width: 800px;
+    height: 400px;
+}
+
+.coisa {
+    display: flex;
+    padding-left: 40px;
+    padding-top: 10px;
+    grid-auto-rows: 20px;
+}
+
+.linkedin img {
+    max-width: 60px;
+    width: 60px;
+}
+
+.linkedin {
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.linkedin img:hover {
+    transform: scale(1.2);
 }
 
 .menu nav a:hover{
+    text-align: center;
     color: whitesmoke;
     text-decoration: none;
     padding-right: 50px;
     justify-content: center;
-    color: #7e6fff;
+    border: 4px solid #3a1d1d;
+    border-radius: 10px;
+    background-color: #3a1d1d;
 }
 
 .menu nav {
     font-size: 20px;
     justify-content: center;
     align-items: center;
-    padding-left: 400px;
+    padding-left: 300px;
 }
 
 .container {
@@ -64,16 +125,35 @@ header {
     height: 90px;
     display: flex;
     flex-direction: row;
+    background: linear-gradient(270deg, #007c85, #0023bd, #86012d, #002b6b);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite; /* Aumentei a duração da animação para suavizar a transição */
+}
+
+.alho h3{
+    padding-top: 10px;
 }
 
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
     }
+    25% {
+        background-position: 100% 50%;
+    }
     50% {
+        background-position: 0% 50%;
+    }
+    75% {
         background-position: 100% 50%;
     }
     100% {
         background-position: 0% 50%;
     }
+}
+
+
+#typing {
+    white-space: nowrap;
+    overflow: hidden; /* Esconde o texto extra */
 }
