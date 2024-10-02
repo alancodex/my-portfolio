@@ -74,8 +74,8 @@ body {
 
 .coisa {
     display: flex;
+    justify-content: flex-end;
     padding-left: 40px;
-    padding-top: 10px;
     grid-auto-rows: 20px;
 }
 
@@ -124,11 +124,16 @@ header {
     width: 100%;
     height: 90px;
     display: flex;
-    flex-direction: row;
+    align-items: center; /* Alinha verticalmente os itens do cabeçalho */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    padding: 0 30px; /* Espaçamento nas laterais */
     background: linear-gradient(270deg, #007c85, #0023bd, #86012d, #002b6b);
     background-size: 400% 400%;
-    animation: gradient 8s ease infinite; /* Aumentei a duração da animação para suavizar a transição */
+    animation: gradient 8s ease infinite;
 }
+
+/* Manter o restante do seu CSS como está */
+
 
 .alho h3{
     padding-top: 10px;
