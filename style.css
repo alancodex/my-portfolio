@@ -25,15 +25,17 @@ body {
 }
 
 .logo {
-    padding-left: 30px;
-    padding-top: 30px;
+    padding-left: 40px;
+    padding-top: 3px;
 }
 
 .menu nav a{
     color: whitesmoke;
     text-decoration: none;
-    padding-right: 50px;
+    padding-right: 70px;
+    padding-left: 25px;
     justify-content: center;
+    transition: 0.5s;
 }
 
 .github img {
@@ -59,7 +61,7 @@ body {
 }
 
 .alho img{
-    width: 250px;
+    width: 300px;
 }
 
 .home h2 {
@@ -68,8 +70,9 @@ body {
 }
 
 .apresent {
-    width: 800px;
+    width: 1000px;
     height: 400px;
+    padding-top: 20px;
 }
 
 .coisa {
@@ -127,7 +130,7 @@ header {
     align-items: center; /* Alinha verticalmente os itens do cabeçalho */
     justify-content: space-between; /* Distribui o espaço entre os itens */
     padding: 0 30px; /* Espaçamento nas laterais */
-    background: linear-gradient(270deg, #007c85, #0023bd, #86012d, #002b6b);
+    background: linear-gradient(270deg, #a70000, #0023bd, #86012d, #0300aa);
     background-size: 400% 400%;
     animation: gradient 8s ease infinite;
 }
