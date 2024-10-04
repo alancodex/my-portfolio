@@ -26,7 +26,8 @@ body {
 
 .logo {
     padding-left: 40px;
-    padding-top: 3px;
+    padding-top: 15px;
+    justify-self: left;
 }
 
 .menu nav a{
@@ -53,11 +54,12 @@ body {
  
 .home {
     display: flex;
-
+    justify-content: space-between;
 }
 
 .alho {
     padding-top: 150px;
+    padding-right: 400px;
 }
 
 .alho img{
@@ -72,14 +74,15 @@ body {
 .apresent {
     width: 1000px;
     height: 400px;
-    padding-top: 20px;
+    padding-top: 55px;
 }
 
 .coisa {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-left: 40px;
     grid-auto-rows: 20px;
+
 }
 
 .linkedin img {
@@ -128,11 +131,22 @@ header {
     height: 90px;
     display: flex;
     align-items: center; /* Alinha verticalmente os itens do cabeçalho */
-    justify-content: space-between; /* Distribui o espaço entre os itens */
+    justify-content: center; /* Distribui o espaço entre os itens */
     padding: 0 30px; /* Espaçamento nas laterais */
     background: linear-gradient(270deg, #a70000, #0023bd, #86012d, #0300aa);
     background-size: 400% 400%;
     animation: gradient 8s ease infinite;
+    position: fixed; /* Fixa o header no topo */
+    top: 0;
+}
+
+
+
+.maxw {
+    display: flex;
+    width: 100%;
+    max-width: 1320px;
+    justify-content: space-between;
 }
 
 /* Manter o restante do seu CSS como está */
@@ -160,8 +174,84 @@ header {
     }
 }
 
+.sobre {
+    background-color: #000000;
+    width: 100%;
+    height: 700px;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.sobre h1 {
+    color: white;
+    padding-top: 20px;
+    align-self: start;
+}
 
 #typing {
     white-space: nowrap;
     overflow: hidden; /* Esconde o texto extra */
+}
+
+/* Estilos gerais para telas menores */
+@media (max-width: 768px) {
+    .menu nav {
+        padding-left: 20px; /* Menos espaço nas laterais */
+        font-size: 16px; /* Reduzir o tamanho da fonte */
+    }
+
+    .coisa {
+        padding-left: 20px; /* Ajustar padding */
+    }
+
+    .home h2 {
+        padding: 50px; /* Menos padding */
+        font-size: 1.2em; /* Reduzir tamanho do texto */
+    }
+
+    .logo img {
+        max-width: 30px; /* Logo menor em telas menores */
+        max-height: 30px;
+    }
+
+    .apresent {
+        width: 90%; /* Aumenta a largura em telas pequenas */
+        height: auto; /* Ajusta a altura */
+    }
+
+    .alho img {
+        width: 200px; /* Reduzir o tamanho da imagem */
+    }
+
+    .github img,
+    .linkedin img {
+        max-width: 40px; /* Ícones menores */
+        width: 40px;
+    }
+}
+
+/* Estilos para telas muito pequenas */
+@media (max-width: 480px) {
+    .menu nav {
+        flex-direction: column; /* Empilha os itens do menu */
+        padding-left: 0; /* Remove padding */
+        text-align: center; /* Centraliza os links */
+    }
+
+    .home {
+        flex-direction: column; /* Alinha verticalmente */
+        align-items: center; /* Centraliza itens */
+    }
+
+    .coisa {
+        justify-content: center; /* Centraliza ícones */
+        padding: 0; /* Remove padding */
+    }
+
+    .home h2 {
+        padding: 20px; /* Menos padding */
+        font-size: 1em; /* Tamanho menor do texto */
+    }
 }
