@@ -55,6 +55,7 @@ body {
 .home {
     display: flex;
     justify-content: space-between;
+    margin-top: 140px;
 }
 
 .alho {
@@ -99,6 +100,18 @@ body {
     transform: scale(1.2);
 }
 
+.agora {
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 50px;
+    justify-content: center;
+    border: 4px solid #3a1d1d;
+    border-radius: 10px;
+    background-color: #3a1d1d;
+    text-align: center;
+}
+
 .menu nav a:hover{
     text-align: center;
     color: whitesmoke;
@@ -108,6 +121,7 @@ body {
     border: 4px solid #3a1d1d;
     border-radius: 10px;
     background-color: #3a1d1d;
+    text-align: center;
 }
 
 .menu nav {
@@ -115,6 +129,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-left: 300px;
+    text-align: center;
 }
 
 .container {
@@ -138,6 +153,7 @@ header {
     animation: gradient 8s ease infinite;
     position: fixed; /* Fixa o header no topo */
     top: 0;
+    text-align: center;
 }
 
 
