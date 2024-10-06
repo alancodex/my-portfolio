@@ -34,13 +34,3 @@ function deleteText() {
 }
 
 type();
-
-const spotlight = document.querySelector('.spotlight');
-
-document.addEventListener('mousemove', (event) => {
-    const x = event.clientX;
-    const y = event.clientY;
-    
-    spotlight.style.left = `${x - spotlight.offsetWidth / 2}px`;
-    spotlight.style.top = `${y - spotlight.offsetHeight / 2}px`;
-});
