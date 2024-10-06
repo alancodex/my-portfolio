@@ -319,7 +319,7 @@
 }
 
 .card img {
-  width: 200px;
+  width: 380px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -341,7 +341,7 @@
 }
 
 .card:hover img {
-  width: 200px;
+  width: 380px;
   opacity: 1;
 }
 
