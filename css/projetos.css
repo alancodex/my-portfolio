@@ -9,7 +9,7 @@
     margin:0 auto;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(270deg, #800000, #000c3f);
+    background: linear-gradient(270deg, #b80303, #000c3f);
   }
   
   .present2 p{
@@ -303,23 +303,23 @@
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
-  width: 360px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(#333, #9e0000);
+  background-image: linear-gradient(#333, #0d3aad);
   transition: all .5s;
 }
 
 .card:hover {
-  background-image: linear-gradient(#d60e0e, #380e74);
+  background-image: linear-gradient(#a80c0c, #1128bd);
 }
 
 .card img {
-  width: 380px;
+  width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -341,7 +341,7 @@
 }
 
 .card:hover img {
-  width: 380px;
+  width: 500px;
   opacity: 1;
 }
 
