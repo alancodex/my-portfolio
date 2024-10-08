@@ -170,9 +170,9 @@
   .maxw {
     display: flex;
     width: 100%;
-    max-width: 1320px;
+    max-width: 2000px;
     justify-content: space-between;
-  }
+}
   
   /* Manter o restante do seu CSS como está */
   

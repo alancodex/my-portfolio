@@ -251,13 +251,13 @@ header {
 /* Estilos para telas muito pequenas */
 @media (max-width: 480px) {
     .menu nav {
-        flex-direction: column; /* Empilha os itens do menu */
+        flex-direction: row; /* Empilha os itens do menu */
         padding-left: 0; /* Remove padding */
         text-align: center; /* Centraliza os links */
     }
 
     .home {
-        flex-direction: column; /* Alinha verticalmente */
+        flex-direction: row; /* Alinha verticalmente */
         align-items: center; /* Centraliza itens */
     }
 
